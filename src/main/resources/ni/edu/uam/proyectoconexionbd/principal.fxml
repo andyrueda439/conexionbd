@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane fx:id="btnConectarse" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.proyectoconexionbd.controller.PrincipalController">
    <children>
-      <Label layoutX="227.0" layoutY="129.0" text="Prueba de conexion con bd" />
-      <Button layoutX="262.0" layoutY="263.0" mnemonicParsing="false" text="Conectarse" />
+      <Label fx:id="lblEstado" layoutX="224.0" layoutY="122.0" text="Prueba de conección con DB" />
+      <Button fx:id="btnPrueba" layoutX="238.0" layoutY="158.0" mnemonicParsing="false" onAction="#pruebaConnection" prefHeight="26.0" prefWidth="139.0" text="Prueba" />
+      <Hyperlink layoutX="86.0" layoutY="41.0" text="Hyperlink" />
+      <Button fx:id="obtenerInfo" layoutX="237.0" layoutY="194.0" mnemonicParsing="false" onAction="#obtenerInfo" text="Obtener la información" />
    </children>
 </AnchorPane>
